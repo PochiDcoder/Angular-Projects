@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>scope</title>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.js"></script>
+</head>
+<body ng-app="myapp">
+<p>check for the scope in angular using $scope and this</p>
+<div ng-controller="maincontroller as main">
+	{{name}}
+	{{main.name}}
+</div>
+<script type="text/javascript" src="./app.js"></script>
+<script type="text/javascript" src="./scope.js"></script>
+</body>
+</html>

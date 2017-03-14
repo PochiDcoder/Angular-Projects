@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ng-routing</title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+</head>
+<body ng-app="myapp">
+<ul>
+	<li>
+		<a href="#/">Home</a>
+	</li>
+	<li>
+		<a href="#About">About</a>
+	</li>
+	<li>
+		<a href="#Contact">Contact</a>
+	</li>
+</ul>
+<div ng-view></div>
+
+
+<script type="text/javascript" src="app.js"></script>
+<script type="text/javascript" src="about.js"></script>
+<script type="text/javascript" src="config.js"></script>
+<script type="text/javascript" src="home.js"></script>
+<script type="text/javascript" src="contact.js"></script>
+</body>
+</html>

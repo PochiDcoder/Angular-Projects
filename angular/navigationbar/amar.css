@@ -1,0 +1,128 @@
+body{
+	margin:0px; 
+}
+div#maincontainer{
+ margin:0px;
+ width:1360px;
+ height:652px;
+ 
+ box-sizing:border-box;     
+}
+
+div#header{
+border:2px solid grey;
+width:1340px;
+height:100px;
+margin:1px;
+box-sizing:border-box;
+border-left:none;
+border-right:none;
+border-top:none;      
+}
+
+div#heading{
+	  
+	width: 600px; 
+    height: 80px;
+    margin:10px 20px;
+    float:left;
+    padding-bottom:10px; 
+    box-sizing:border-box; 
+}
+
+div#about{
+    
+	width: 600px; 
+    height: 80px;
+    margin:10px 20px;
+    float:right; 
+    text-align:center;
+    padding-top:20px;
+    padding-left:55px; 
+    box-sizing:border-box;
+
+}
+
+div#section{
+
+width:1340px;
+height:400px;
+margin:1px;
+box-sizing:border-box;
+}
+
+div#content{
+     
+    width: 800px; 
+    height:380px;
+    margin:10px 20px;
+    float:left;
+    padding-left:200px;
+    box-sizing:border-box;
+    padding-top:40px;  
+    }
+
+div#image{
+     
+    width: 400px; 
+    height:380px;
+    margin:10px 20px;
+    float:left;
+    text-align:center;
+    padding-right:10px; 
+}
+
+div#footer{
+border:1px solid yellow;
+width:1355px;
+height:150px;
+margin:1px;
+background-color:yellow; 
+box-sizing:border-box; 
+}
+
+div#address{
+	
+	width:600px;
+	height:120px;
+	margin:10px 20px;
+	float:left;     
+}
+div#add{
+	
+	width:400px;
+	height:110px; 
+    float:left;
+    font-size:20px;
+    padding-left:200px; 
+    box-sizing:content-box;   
+}
+
+div#sitemap{
+	
+	width:600px;
+	height:120px;
+	margin:10px 20px;
+	float:left;
+	box-sizing:border-box;  
+}
+
+div#site1{
+	
+	width:350px;
+	height:110px; 
+    float:left;
+    padding-left:290px; 
+     box-sizing:border-box; 
+     
+}
+
+div#site2{
+	
+	width:200px;
+	height:110px; 
+    float:right;
+     
+     box-sizing:border-box; 
+     
+}

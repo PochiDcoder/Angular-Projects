@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html ng-app="myapp">
+<head>
+	<title>ng-class</title>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.js"></script>
+
+	<style type="text/css">
+		
+		.old{
+			background-color:green; 
+		}
+
+		.modern{
+			background-color:blue; 
+		}
+
+		.new{
+			background-color:red; 
+		}
+
+	</style>
+</head>
+<body>
+<h1>Usage of ng-class</h1>
+<p>the primary purpose of ng-class is to dynamically change the css classes based on a condition and example as follows</p>
+
+<div ng-controller="moviescontroller as movies">
+	<ul>
+		<li ng-repeat="movie in movies.favorites" ng-class="{
+		old:movie.year<2013,
+		modern:movie.year>2012 && movie.year<2015,
+		new:movie.year>2014
+		}">
+			{{movie.title}} released in {{movie.year}} and its index is {{$index}}
+			<input type="text" name="year" ng-model="movie.year">
+		</li>
+	</ul>
+
+</div>
+
+
+<script type="text/javascript" src="./app.js"></script>
+<script type="text/javascript" src="./movies.js"></script>
+</body>
+</html>

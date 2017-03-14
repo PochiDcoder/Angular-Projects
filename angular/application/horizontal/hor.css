@@ -1,0 +1,29 @@
+ul{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	width: 100%;
+	background-color:#a4a5a5;
+	overflow:hidden; 
+}
+/*li{
+	display:inline; 
+}*/
+li{
+	float:left;
+	border-right:1px solid white; 
+}
+
+li a{
+	text-decoration:none;
+	
+	display:block;
+	padding:8px 16px;
+	color:black; 
+	text-align: center;
+
+}
+li a:hover{
+	background-color:#279e2b;
+	color:white;
+}

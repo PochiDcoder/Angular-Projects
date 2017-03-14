@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html >
+<head>
+	<title>List of movies</title>
+</head>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.js"></script>
+
+<body ng-app="myapp">
+        
+        <div ng-controller="moviecontroller as movies">
+	          
+	          <div ng-repeat="movie in movies.favorates">
+	          	
+	          	<p>{{movie.title}} and it's index is {{$index}} and released in the year {{movie.year}}</p>
+	          
+	          </div>
+
+        </div>
+
+<script type="text/javascript" src="./app.js"></script>
+ <script type="text/javascript" src="movies.js"></script>
+
+</body>
+</html>

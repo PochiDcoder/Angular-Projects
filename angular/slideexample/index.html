@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>image sliding</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+<div id="myimages">
+<img id="mine" alt="missing sunny">	
+</div>
+<script type="text/javascript">
+	var image=document.getElementById("mine");
+	var ary=["images/sunny1.jpg","images/sunny2.jpg","images/sunny3.jpg","images/sunny4.jpg"];
+	var i=0;
+	function changeImage() {
+		image.setAttribute("src",ary[i]);
+		i++;
+		if(i >= ary.length){
+			i=0;
+		}
+	}
+	setInterval(changeImage,2000);
+
+
+
+</script>
+</body>
+</html>

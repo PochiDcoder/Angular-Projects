@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>multiple controllers</title>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.js"></script>
+</head>
+<body ng-app="myapp">
+<div ng-controller="maincontroller as main">
+	<form ng-submit="main.getUser()">
+		<input type="text" name="id" ng-model="main.userId"></br>
+		<button type=submit>search</button>
+	</form>
+	<pre> {{ main.chosenUser }} </pre>
+</div>
+<div ng-controller="othercontroller as other">
+	{{name}}
+</div>
+
+
+
+
+<script type="text/javascript" src="app.js"></script>
+<script type="text/javascript" src="http.js"></script>
+<script type="text/javascript" src="othercontroller.js"></script>
+</body>
+</html>
